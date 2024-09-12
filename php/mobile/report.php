@@ -1,7 +1,7 @@
 <?php
 require_once "../dbconnect.php";
 
-$id = $_POST['id'];
+$id = $_GET['id'];
  
 
 $sql = "SELECT * FROM student

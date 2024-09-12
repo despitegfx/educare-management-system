@@ -1,6 +1,5 @@
 <?php require_once "php/dbconnect.php" ?>
 <?php require_once "php/student-code.php" ?>
-<?php if ($permission==false ):header("location:404.html"); endif;?>
 <?php require_once "header-mobile.php" ?>
 
         </div>

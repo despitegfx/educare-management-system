@@ -1,8 +1,8 @@
 <?php
 require_once "../dbconnect.php";
 
-$Email = htmlspecialchars($_POST['email']);
-$Password = md5(htmlspecialchars($_POST['password']));
+$Email = htmlspecialchars($_GET['email']);
+$Password = md5(htmlspecialchars($_GET['password']));
 
 
 $sql = "SELECT * FROM parent WHERE email = '".$Email."' AND password = '".$Password."'";

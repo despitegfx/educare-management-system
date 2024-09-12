@@ -1,7 +1,7 @@
 <?php
 require_once "../dbconnect.php";
 
-$id = $_POST['id'];
+$id = $_GET['id'];
 
 
 $sql = "SELECT * FROM student 
@@ -27,7 +27,7 @@ if ($result ){
     $tissue = $row[16];
     $date = $row[17];
  
-    array_push($response, array("firstname"=>$firstname, "lastname"=>$lastname,"food"=>$food,
+    array_push($response, array("firstname"=>$firstname, "lastname"=>$lastname,
                                 "water"=>$water, "diaper"=>$diaper,"tissue"=>$tissue, "date"=>$date));
                             
     echo json_encode($response);
